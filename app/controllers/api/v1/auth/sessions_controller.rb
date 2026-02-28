@@ -17,7 +17,7 @@ module Api
           }, status: :ok
         end
 
-        def respond_to_on_destroy
+        def respond_to_on_destroy(_resource = nil)
           if request.headers["Authorization"].present?
             render json: {
               success: true,
