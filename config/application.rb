@@ -28,5 +28,13 @@ module NagarikSuchana
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.middleware.use Rack::Attack
+
+    config.action_dispatch.default_headers.merge!(
+      "X-Content-Type-Options" => "nosniff",
+      "X-Frame-Options" => "SAMEORIGIN",
+      "X-XSS-Protection" => "1; mode=block"
+    )
   end
 end
