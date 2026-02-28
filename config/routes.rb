@@ -26,6 +26,7 @@ Rails.application.routes.draw do
         resources :users, only: %i[index show update destroy]
       end
 
+      get "auth/me", to: "auth/me#show"
       get "health", to: "health#index"
     end
   end
