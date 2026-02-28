@@ -170,3 +170,5 @@ puts "  Admin    -> admin@myapp.com         / Admin@123!"
 puts "  Business -> techcorp@business.com   / Business@123!"
 puts "  User     -> alice.johnson@gmail.com / User@123!"
 puts "#{'=' * 60}\n"
+
+load Rails.root.join("db/seeds/government_notices.rb")
