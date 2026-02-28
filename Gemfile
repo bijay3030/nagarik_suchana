@@ -36,6 +36,7 @@ gem "thruster", require: false
 gem "rack-cors"
 gem "rack-attack"
 gem "redis", ">= 4.0.1"
+gem "sidekiq"
 gem "config"
 gem "sentry-ruby"
 gem "sentry-rails"
