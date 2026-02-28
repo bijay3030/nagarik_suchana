@@ -1,0 +1,12 @@
+class <%= migration_class_name %> < ActiveRecord::Migration[<%= ActiveRecord::Migration.current_version %>]
+  def change
+    create_table :<%= table_name %>, id: :uuid do |t|
+      # columns here
+
+      t.timestamps
+    end
+
+    # Always add indexes here, below the table creation
+    # add_index :<%= table_name %>, :column_name
+  end
+end

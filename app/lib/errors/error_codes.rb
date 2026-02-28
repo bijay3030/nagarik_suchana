@@ -1,0 +1,21 @@
+module Errors
+  module ErrorCodes
+    # Authentication & Authorization
+    UNAUTHORIZED = 'UNAUTHORIZED'
+    FORBIDDEN = 'FORBIDDEN'
+    TOKEN_EXPIRED = 'TOKEN_EXPIRED'
+    TOKEN_INVALID = 'TOKEN_INVALID'
+
+    # Resource Errors
+    NOT_FOUND = 'NOT_FOUND'
+    ALREADY_EXISTS = 'ALREADY_EXISTS'
+
+    # Validation
+    VALIDATION_ERROR = 'VALIDATION_ERROR'
+
+    # Server
+    INTERNAL_ERROR = 'INTERNAL_ERROR'
+    SERVICE_UNAVAILABLE = 'SERVICE_UNAVAILABLE'
+    RATE_LIMITED = 'RATE_LIMITED'
+  end
+end
