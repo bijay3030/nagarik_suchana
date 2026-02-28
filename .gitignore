@@ -7,8 +7,15 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore all environment files.
-/.env*
+# Environment files
+/.env
+/.env.local
+/.env.*.local
+!.env.example
+
+# Rails credentials keys
+/config/master.key
+/config/credentials/*.key
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -33,3 +40,10 @@
 
 # Node modules in frontend
 /frontend/node_modules
+/frontend/vite.config.js.timestamp-*.mjs
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+
+/.ruby-lsp
