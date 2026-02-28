@@ -1,7 +1,8 @@
 class Rack::Attack
   # --- Configure Cache Store (Redis) ---
   Rack::Attack.cache.store = ActiveSupport::Cache::RedisCacheStore.new(
-    url: ENV['REDIS_URL']
+    url: ENV["REDIS_URL"],
+    pool: false
   )
 
   # =========================================================
